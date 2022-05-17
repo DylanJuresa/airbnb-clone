@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+  .button{
+    @apply px-4 py-2 border rounded-full cursor-pointer 
+    hover:shadow-lg active:scale-90 active:bg-gray-200 
+    text-center transition transform duration-100 ease-out;
+  }
+}
+
 html,
+:-webkit-scrollbar-thumb {
+  background: orange;        /* color of the tracking area */
+}
+
 body {
   padding: 0;
   margin: 0;
